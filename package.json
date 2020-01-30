@@ -1,0 +1,21 @@
+{
+  "name": "react-next-boilerplate-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:react-next-boilerplate/react-next-boilerplate-site.git",
+  "author": "Jorge Luis Calleja <jorgelca1205@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npm run lint:js",
+    "lint:js": "eslint src --fix",
+    "prettier": "prettier --config .prettierrc \"./**/*.+(js|json|jsx)\" --write"
+  },
+  "dependencies": {
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
