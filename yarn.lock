@@ -894,6 +894,11 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@typefaces-pack/typeface-inter@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@typefaces-pack/typeface-inter/-/typeface-inter-1.0.3.tgz#bdeb38b40fcef1383a2865292ed777bb376281d7"
+  integrity sha512-5vuUFYeAFCJ9Bv23EmicIhF4F0vGyj7CLouRZn5O1Gvzq23XEUghN0nOL7WU1NjyqDBdDEpT66/hsVjXvTNnjw==
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -6591,6 +6596,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-metropolis@^0.0.74:
+  version "0.0.74"
+  resolved "https://registry.yarnpkg.com/typeface-metropolis/-/typeface-metropolis-0.0.74.tgz#4201ff1e3b86f55825eed53662c49dff54c461f3"
+  integrity sha512-8qJnWwD5GkFqoNkv0t068jXziJHoIayq7dNl9a0BRy30/VznqmEgrQWkMDG8KxH2hRXXAWZfayXM9L6sZEkaaw==
 
 unfetch@4.1.0:
   version "4.1.0"

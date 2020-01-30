@@ -27,9 +27,11 @@
     ]
   },
   "dependencies": {
+    "@typefaces-pack/typeface-inter": "^1.0.3",
     "next": "^9.2.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "typeface-metropolis": "^0.0.74"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
