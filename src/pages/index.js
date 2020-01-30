@@ -1,7 +1,7 @@
 import React from 'react';
 
 function IndexPage() {
-  return <div>React Next Boilerplate</div>;
+  return <div>coming soon</div>;
 }
 
 export default IndexPage;
