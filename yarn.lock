@@ -887,6 +887,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@icons-pack/react-simple-icons@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-2.2.0.tgz#bd8082517bae315c28ce4e2b9ee392d6dd8f9028"
+  integrity sha512-CrTTSDDemqsvhT8bsLsFQKEWBenAfjepnY9671gufmpOzrLxyS6LPGdNdamUmwclo5pmmm2eY2YwK7cmCDUOrw==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"

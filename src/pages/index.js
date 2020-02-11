@@ -1,7 +1,13 @@
 import React from 'react';
 
+import Header from '../components/Header';
+
 function IndexPage() {
-  return <div>coming soon</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default IndexPage;

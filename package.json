@@ -27,6 +27,7 @@
     ]
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^2.2.0",
     "@typefaces-pack/typeface-inter": "^1.0.3",
     "next": "^9.2.1",
     "react": "^16.12.0",
