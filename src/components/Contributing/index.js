@@ -24,14 +24,13 @@ function Contributing() {
       <style jsx>{`
         section {
           background-color: #000;
-          padding: 50px 0;
+          padding: 50px 16px;
         }
 
         .container {
           width: 100%;
           margin: 0 auto;
           max-width: 1024px;
-          padding: 0 16px;
         }
 
         h2 {

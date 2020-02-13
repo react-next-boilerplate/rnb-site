@@ -32,7 +32,6 @@ function Media() {
           width: 100%;
           margin: 0 auto;
           max-width: 1024px;
-          padding: 0 16px;
         }
 
         h2 {

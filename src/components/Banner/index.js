@@ -15,7 +15,8 @@ function Banner() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 80px 0;
+          padding: 80px 16px;
+          text-align: center;
         }
 
         h1 {

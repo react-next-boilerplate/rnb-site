@@ -135,6 +135,10 @@ function Features() {
       </div>
 
       <style jsx>{`
+        section {
+          padding: 0 16px;
+        }
+
         .container {
           width: 100%;
           margin: 0 auto;
@@ -150,10 +154,6 @@ function Features() {
         @media screen and (max-width: 960px) {
           .row {
             grid-template-columns: 1fr 1fr;
-          }
-
-          .container {
-            padding: 0 16px;
           }
         }
 
