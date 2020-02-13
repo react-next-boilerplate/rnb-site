@@ -91,15 +91,50 @@ function Features() {
               <p>Simple and complete React DOM testing utilities that encourage good testing practices.</p>
             </div>
           </div>
+
+          <div className="card">
+            <div>
+              <h3>Typefaces</h3>
+            </div>
+
+            <div>
+              <p>
+                Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service
+                adds an extra (blocking) network request.
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>
+              <h3>Emotion</h3>
+            </div>
+
+            <div>
+              <p>
+                Emotion is a library designed for writing css styles with JavaScript. It provides powerful and
+                predictable style composition in addition to a great developer experience with features such as source
+                maps, labels, and testing utilities.
+              </p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div>
+              <h3>Immer</h3>
+            </div>
+
+            <div>
+              <p>
+                (German for: always) is a tiny package that allows you to work with immutable state in a more convenient
+                way. It is based on the copy-on-write mechanism
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <br />
-
       <style jsx>{`
-        section {
-        }
-
         .container {
           width: 100%;
           margin: 0 auto;
@@ -112,6 +147,22 @@ function Features() {
           grid-gap: 24px;
         }
 
+        @media screen and (max-width: 960px) {
+          .row {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          .container {
+            padding: 0 16px;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .row {
+            grid-template-columns: 1fr;
+          }
+        }
+
         .features-list {
           display: flex;
           flex-flow: row wrap;
@@ -122,6 +173,7 @@ function Features() {
           font-weight: 600;
           font-size: 2.25rem;
           text-align: center;
+          margin: 3rem 0;
         }
 
         .card {

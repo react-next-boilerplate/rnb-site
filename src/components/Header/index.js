@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Nav from './nav';
 
-function Header() {
+function Header({ version }) {
   return (
     <header className="header-nav">
-      <Nav />
+      <Nav version={version} />
 
       <style jsx>{`
         header {
@@ -21,5 +22,9 @@ function Header() {
     </header>
   );
 }
+
+Header.propTypes = {
+  version: PropTypes.string,
+};
 
 export default Header;

@@ -54,6 +54,10 @@ function GettingStarted() {
               </span>
             </div>
           </li>
+
+          <li>
+            <p>Now you can go to localhost:3000 and see your app!</p>
+          </li>
         </ol>
       </div>
 
@@ -73,6 +77,7 @@ function GettingStarted() {
           font-weight: 600;
           font-size: 2.25rem;
           text-align: center;
+          margin: 3rem 0;
         }
 
         p {

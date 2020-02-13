@@ -1,15 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import Link from 'next/link';
+
 import { Spectrum, Github } from '@icons-pack/react-simple-icons';
 
-function Nav() {
+function Nav({ version }) {
   return (
     <nav>
-      <a href="/">
-        <img src="/static/images/svg/RNB-logo.svg" />
-      </a>
+      <Link href="/">
+        <a>
+          <img src="/static/images/svg/RNB-logo.svg" />
+        </a>
+      </Link>
 
       <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/releases" className="version">
-        v1.1
+        {version}
       </a>
 
       <div className="spacer" />
@@ -21,14 +27,16 @@ function Nav() {
         </li>
 
         <li>
-          <a className="link" href="/">
-            Learn
+          <a className="link" href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
+            Docs
           </a>
         </li>
 
         <li>
-          <a className="link" href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
-            Docs
+          <a
+            className="link"
+            href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip">
+            Download
           </a>
         </li>
 
@@ -119,5 +127,9 @@ function Nav() {
     </nav>
   );
 }
+
+Nav.propTypes = {
+  version: PropTypes.string,
+};
 
 export default Nav;
