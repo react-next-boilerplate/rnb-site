@@ -14,9 +14,7 @@ function GettingStarted() {
             <div>
               <span>
                 <pre>
-                  <code>
-                    $ git clone --depth=1 https://github.com/react-next-boilerplate/react-next-boilerplate.git
-                  </code>
+                  <code>$ git clone https://github.com/react-next-boilerplate/react-next-boilerplate.git</code>
                 </pre>
               </span>
             </div>
@@ -28,7 +26,7 @@ function GettingStarted() {
             <div>
               <span>
                 <pre>
-                  <code>$ cd {'<YOUR_PROJECT_NAME>'}</code>
+                  <code>$ cd react-next-boilerplate</code>
                 </pre>
               </span>
             </div>
@@ -61,7 +59,7 @@ function GettingStarted() {
 
       <style jsx>{`
         section {
-          background-color: #fafafa;
+          background: linear-gradient(-2deg, #fff 15%, #fafafa 15.1%, #fafafa 85%, #fff 85.1%);
           padding: 50px 0;
         }
 
