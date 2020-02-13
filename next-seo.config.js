@@ -10,7 +10,7 @@ export default {
     images: [
       {
         url:
-          'https://raw.githubusercontent.com/react-next-boilerplate/react-next-boilerplate/master/docs/images/Preview.png',
+          'https://raw.githubusercontent.com/react-next-boilerplate/react-next-boilerplate/master/docs/images/preview-v2.png',
         width: 1012,
         height: 506,
         alt: 'React Next Boilerplate',
@@ -19,8 +19,9 @@ export default {
     site_name: 'React Next Boilerplate',
   },
   twitter: {
-    handle: '@wootsbot',
-    site: '@wootsbot',
+    handle: '@RNBoilerplate',
+    site: '@RNBoilerplate',
     cardType: 'summary_large_image',
   },
 };
+s
