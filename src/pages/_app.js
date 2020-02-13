@@ -16,6 +16,15 @@ class Srr extends App {
         </Head>
 
         <Component {...pageProps} />
+
+        <style global jsx>{`
+          body {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: Inter;
+          }
+        `}</style>
       </>
     );
   }
