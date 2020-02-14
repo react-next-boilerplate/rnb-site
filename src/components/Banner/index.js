@@ -8,6 +8,12 @@ function Banner() {
       <h1>React Next Boilerplate</h1>
 
       <p>Start your project with the NextJS in seconds</p>
+      <p>We spend time using good community practices to make your project scalable.</p>
+
+      <sub>
+        🚀 A basis for reducing the configuration of your projects with Next.js, best development practices and popular
+        libraries in the developer community.
+      </sub>
 
       <style jsx>{`
         section {
