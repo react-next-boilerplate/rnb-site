@@ -2,18 +2,11 @@ import React from 'react';
 
 import Head from 'next/head';
 import App from 'next/app';
-import Router from 'next/router';
 
 import 'typeface-metropolis';
 import '@typefaces-pack/typeface-inter';
 
-import * as gtag from '../../lib/gtag';
-
 class Srr extends App {
-  componentDidMount() {
-    Router.events.on('routeChangeComplete', url => gtag.pageview(url));
-  }
-
   render() {
     const { Component, pageProps } = this.props;
     return (

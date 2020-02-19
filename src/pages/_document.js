@@ -3,7 +3,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { useAmp } from 'next/amp';
 
 import { GA_TRACKING_ID } from '../../lib/gtag';
-import AmpAnalytics from '../components/amp/AmpAnalytics';
 
 function AmpWrap({ ampOnly, nonAmp }) {
   const isAmp = useAmp();
@@ -11,7 +10,7 @@ function AmpWrap({ ampOnly, nonAmp }) {
   return !isAmp && nonAmp;
 }
 
-class MyDocument extends Document {
+class ReactNextBoilerplateSite extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
@@ -29,36 +28,52 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/static/favicon/favicon.png" />
           <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
           <meta name="theme-color" content="#000" />
+
+          <AmpWrap
+            ampOnly={
+              <script
+                async
+                key="amp-analytics"
+                custom-element="amp-analytics"
+                src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+              />
+            }
+          />
+
+          <AmpWrap
+            ampOnly={<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" />}
+          />
         </Head>
 
         <body>
           <Main />
           <NextScript />
-          {/* AMP - Google Analytics */}
           <AmpWrap
             ampOnly={
-              <AmpAnalytics
-                type="googleanalytics"
-                script={{
-                  vars: {
-                    account: GA_TRACKING_ID,
-                    gtag_id: GA_TRACKING_ID,
-                    config: {
-                      [GA_TRACKING_ID]: { groups: 'default' },
-                    },
-                  },
-                  triggers: {
-                    trackPageview: {
-                      on: 'visible',
-                      request: 'pageview',
-                    },
-                  },
-                }}
-              />
+              <amp-analytics type="googleanalytics" id="analytics1" data-credentials="include">
+                <script
+                  type="application/json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      vars: {
+                        account: GA_TRACKING_ID,
+                        gtag_id: GA_TRACKING_ID,
+                        config: {
+                          GA_TRACKING_ID: { groups: 'default' },
+                        },
+                      },
+                      triggers: {
+                        trackPageview: {
+                          on: 'visible',
+                          request: 'pageview',
+                        },
+                      },
+                    }),
+                  }}
+                />
+              </amp-analytics>
             }
           />
-
-          {/* Non-AMP - Google Analytics */}
           <AmpWrap
             nonAmp={
               <>
@@ -66,11 +81,11 @@ class MyDocument extends Document {
                 <script
                   dangerouslySetInnerHTML={{
                     __html: `
-                      window.dataLayer = window.dataLayer || [];
-                      function gtag(){dataLayer.push(arguments);}
-                      gtag('js', new Date());
-                      gtag('config', '${GA_TRACKING_ID}');
-                    `,
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${GA_TRACKING_ID}');
+                  `,
                   }}
                 />
               </>
@@ -82,4 +97,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default ReactNextBoilerplateSite;
