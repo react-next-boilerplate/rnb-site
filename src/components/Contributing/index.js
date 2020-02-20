@@ -13,6 +13,8 @@ function Contributing() {
           </p>
 
           <a
+            data-category="Site-Wide Custom Events"
+            data-label="Link logo to contributing"
             type="button"
             className="button button-contributing"
             href="https://github.com/react-next-boilerplate/react-next-boilerplate/blob/canary/CONTRIBUTING.md">

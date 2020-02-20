@@ -187,7 +187,7 @@ function Features() {
           font-weight: 600;
           font-size: 20px;
           line-height: 24px;
-          color: #6aeb9d;
+          color: #000000;
           margin: 0;
         }
 
