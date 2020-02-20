@@ -6,6 +6,17 @@ import App from 'next/app';
 import 'typeface-metropolis';
 import '@typefaces-pack/typeface-inter';
 
+if (process.browser && process.env.NODE_ENV === 'production') {
+  console.log(
+    `%c
+Welcome to the official React Next Boilerplate site.
+
+Help us improve this site. https://github.com/react-next-boilerplate/RNB-site/issues
+`,
+    'font-family:monospace;color:#1976d2;font-size:14px;'
+  );
+}
+
 class Srr extends App {
   render() {
     const { Component, pageProps } = this.props;
