@@ -9,36 +9,50 @@ function Nav({ version, onOpenMenu, open }) {
   return (
     <nav>
       <Link href="/">
-        <a>
-          <img src="/static/images/svg/RNB-logo.svg" />
+        <a data-category="Site-Wide Custom Events" data-label="Link logo to home">
+          <img aria-label="React Next Boilerplate Logo" alt="logo" src="/static/images/svg/RNB-logo.svg" />
         </a>
       </Link>
 
-      <a href="https://github.com/react-next-boilerplate/react-next-boilerplate/releases" className="version">
+      <a
+        data-category="Site-Wide Custom Events"
+        data-label="Link logo to version"
+        href="https://github.com/react-next-boilerplate/react-next-boilerplate/releases"
+        className="version">
         {version}
       </a>
 
       <div className="spacer" />
 
-      <button type="button" className="menu" onClick={onOpenMenu}>
-        {open ? <img src="/static/images/svg/close.svg" alt="" /> : <img src="/static/images/svg/menu.svg" alt="" />}
+      <button aria-label="menu" type="button" className="menu" onClick={onOpenMenu}>
+        {open ? (
+          <img aria-label="image for menu close" src="/static/images/svg/close.svg" alt="menu close" />
+        ) : (
+          <img aria-label="image for menu open" src="/static/images/svg/menu.svg" alt="menu open" />
+        )}
       </button>
 
       <ul className="navbar">
         <li>
-          <a className="link" href="#features">
+          <a data-category="Site-Wide Custom Events" data-label="Link features" className="link" href="#features">
             Features
           </a>
         </li>
 
         <li>
-          <a className="link" href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
+          <a
+            data-category="Site-Wide Custom Events"
+            data-label="Link Docs"
+            className="link"
+            href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
             Docs
           </a>
         </li>
 
         <li>
           <a
+            data-category="Site-Wide Custom Events"
+            data-label="Link Download"
             className="link"
             href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip">
             Download
@@ -46,13 +60,21 @@ function Nav({ version, onOpenMenu, open }) {
         </li>
 
         <li>
-          <a className="link-circle" href="https://github.com/react-next-boilerplate/react-next-boilerplate">
+          <a
+            data-category="Site-Wide Custom Events"
+            data-label="Link Github"
+            className="link-circle"
+            href="https://github.com/react-next-boilerplate/react-next-boilerplate">
             <Github size={20} />
           </a>
         </li>
 
         <li>
-          <a className="link-circle" href="https://spectrum.chat/react-next-boilerplate">
+          <a
+            data-category="Site-Wide Custom Events"
+            data-label="Link Spectrum"
+            className="link-circle"
+            href="https://spectrum.chat/react-next-boilerplate">
             <Spectrum size={20} />
           </a>
         </li>

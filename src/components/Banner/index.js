@@ -3,7 +3,7 @@ import React from 'react';
 function Banner() {
   return (
     <section>
-      <img src="/static/images/svg/banner-logo.svg" />
+      <img aria-label="React Next Boilerplate banner logo" alt="banner logo" src="/static/images/svg/banner-logo.svg" />
 
       <h1>React Next Boilerplate</h1>
 

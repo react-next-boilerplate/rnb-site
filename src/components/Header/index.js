@@ -17,19 +17,29 @@ function Header({ version }) {
       {open && (
         <ul className="navbar-mobile">
           <li>
-            <a className="link" href="#features">
+            <a
+              data-category="Site-Wide Custom Events"
+              data-label="Link logo to features"
+              className="link"
+              href="#features">
               Features
             </a>
           </li>
 
           <li>
-            <a className="link" href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
+            <a
+              data-category="Site-Wide Custom Events"
+              data-label="Link logo to Docs"
+              className="link"
+              href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
               Docs
             </a>
           </li>
 
           <li>
             <a
+              data-category="Site-Wide Custom Events"
+              data-label="Link logo to Download"
               className="link"
               href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip">
               Download
@@ -37,13 +47,21 @@ function Header({ version }) {
           </li>
 
           <li>
-            <a className="link-circle" href="https://github.com/react-next-boilerplate/react-next-boilerplate">
+            <a
+              data-category="Site-Wide Custom Events"
+              data-label="Link logo to Github"
+              className="link-circle"
+              href="https://github.com/react-next-boilerplate/react-next-boilerplate">
               <Github size={20} />
             </a>
           </li>
 
           <li>
-            <a className="link-circle" href="https://spectrum.chat/react-next-boilerplate">
+            <a
+              data-category="Site-Wide Custom Events"
+              data-label="Link logo to Spectrum"
+              className="link-circle"
+              href="https://spectrum.chat/react-next-boilerplate">
               <Spectrum size={20} />
             </a>
           </li>

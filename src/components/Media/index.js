@@ -8,10 +8,13 @@ function Media() {
 
         <div className="wrapper">
           <a
+            data-category="Site-Wide Custom Events"
+            data-label="Link logo to producthunt"
             href="https://www.producthunt.com/posts/react-next-boilerplate?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-react-next-boilerplate"
             rel="noopener noreferrer"
             target="_blank">
             <img
+              aria-label="React Next Boilerplate "
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=184218&theme=light"
               alt="React Next Boilerplate - Start your project with the NextJS in seconds. | Product Hunt Embed"
               width="250px"
