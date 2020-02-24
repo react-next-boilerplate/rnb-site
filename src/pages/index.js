@@ -19,11 +19,11 @@ function IndexPage() {
   return (
     <>
       <SocialMeta
-        image="/static/images/home.jpg"
+        image="/static/images/shared.png"
         title="React Next Boilerplate"
         url="https://www.reactnextboilerplate.com"
         description="A basis for reducing the configuration of your projects with Next.js, best development practices and popular libraries in the developer community."
-        keywords="react, nextjs, boilerplate, javascript, redux, redux-saga, immer"
+        keywords="react-next-boilerplate, react, nextjs, boilerplate, javascript, redux, redux-saga, immer"
       />
 
       <Header version={data?.name} />
