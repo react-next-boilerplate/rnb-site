@@ -60,23 +60,23 @@ function Nav({ version, onOpenMenu, open }) {
         </li>
 
         <li>
-          <a
-            data-category="Site-Wide Custom Events"
-            data-label="Link Github"
-            className="link-circle"
-            href="https://github.com/react-next-boilerplate/react-next-boilerplate">
-            <Github size={20} />
-          </a>
+          <Link href="https://github.com/react-next-boilerplate/react-next-boilerplate">
+            <a data-category="Site-Wide Custom Events" data-label="Link Github" className="link-circle">
+              <Github size={20} />
+            </a>
+          </Link>
         </li>
 
         <li>
-          <a
-            data-category="Site-Wide Custom Events"
-            data-label="Link Spectrum"
-            className="link-circle"
-            href="https://spectrum.chat/react-next-boilerplate">
-            <Spectrum size={20} />
-          </a>
+          <Link href="https://spectrum.chat/react-next-boilerplate">
+            <a
+              data-category="Site-Wide Custom Events"
+              data-label="Link Spectrum"
+              className="link-circle"
+              href="https://spectrum.chat/react-next-boilerplate">
+              <Spectrum size={20} />
+            </a>
+          </Link>
         </li>
       </ul>
       <style jsx>{`
