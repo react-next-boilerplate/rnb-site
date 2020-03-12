@@ -81,11 +81,13 @@ function GettingStarted() {
         }
 
         p {
-          font-size: 16px;
+          font-size: 1rem;
         }
 
         code {
           white-space: normal;
+          font-family: 'Roboto Mono', monospace;
+          font-size: 1rem;
         }
 
         li::before {

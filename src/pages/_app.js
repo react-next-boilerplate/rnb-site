@@ -5,6 +5,7 @@ import Head from 'next/head';
 import App from 'next/app';
 
 import 'typeface-metropolis';
+import 'typeface-roboto-mono';
 import '@typefaces-pack/typeface-inter';
 
 if (process.browser && process.env.NODE_ENV === 'production') {
