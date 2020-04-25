@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Link from 'next/link';
 
-import { Spectrum, Github } from '@icons-pack/react-simple-icons';
+import { Github, Discord } from '@icons-pack/react-simple-icons';
 
 function Nav({ version, onOpenMenu, open }) {
   return (
@@ -34,9 +34,11 @@ function Nav({ version, onOpenMenu, open }) {
 
       <ul className="navbar">
         <li>
-          <a data-category="Site-Wide Custom Events" data-label="Link features" className="link" href="#features">
-            Features
-          </a>
+          <Link href="#features">
+            <a data-category="Site-Wide Custom Events" data-label="Link features" className="link">
+              Features
+            </a>
+          </Link>
         </li>
 
         <li>
@@ -51,32 +53,32 @@ function Nav({ version, onOpenMenu, open }) {
 
         <li>
           <a
+            href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip"
             data-category="Site-Wide Custom Events"
             data-label="Link Download"
-            className="link"
-            href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip">
+            className="link">
             Download
           </a>
         </li>
 
         <li>
-          <Link href="https://github.com/react-next-boilerplate/react-next-boilerplate">
-            <a data-category="Site-Wide Custom Events" data-label="Link Github" className="link-circle">
-              <Github size={20} />
-            </a>
-          </Link>
+          <a
+            href="https://github.com/react-next-boilerplate/react-next-boilerplate"
+            data-category="Site-Wide Custom Events"
+            data-label="Link Github"
+            className="link-circle">
+            <Github size={20} />
+          </a>
         </li>
 
         <li>
-          <Link href="https://spectrum.chat/react-next-boilerplate">
-            <a
-              data-category="Site-Wide Custom Events"
-              data-label="Link Spectrum"
-              className="link-circle"
-              href="https://spectrum.chat/react-next-boilerplate">
-              <Spectrum size={20} />
-            </a>
-          </Link>
+          <a
+            href="https://discord.gg/ANbWXGs"
+            data-category="Site-Wide Custom Events"
+            data-label="Link Discord"
+            className="link-circle">
+            <Discord size={20} />
+          </a>
         </li>
       </ul>
       <style jsx>{`
