@@ -27,14 +27,14 @@
     ]
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^2.2.0",
+    "@icons-pack/react-simple-icons": "^2.7.1",
     "@typefaces-pack/typeface-inter": "^1.0.3",
-    "next": "^9.3.2",
-    "next-pwa": "^2.1.2",
+    "next": "^9.3.5",
+    "next-pwa": "^2.3.3",
     "prop-types": "^15.7.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "swr": "^0.1.16",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "swr": "^0.2.0",
     "typeface-metropolis": "^0.0.74",
     "typeface-roboto-mono": "^0.0.75"
   },
