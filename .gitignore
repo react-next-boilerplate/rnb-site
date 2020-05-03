@@ -1,3 +1,7 @@
 node_modules
 .next
 .DS_Store
+
+
+**/public/workbox-*.js
+**/public/sw.js

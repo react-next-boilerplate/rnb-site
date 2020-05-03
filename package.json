@@ -27,9 +27,9 @@
     ]
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^2.7.1",
+    "@icons-pack/react-simple-icons": "^3.0.0-alpha.0",
     "@typefaces-pack/typeface-inter": "^1.0.3",
-    "next": "^9.3.5",
+    "next": "^9.3.6",
     "next-pwa": "^2.3.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
