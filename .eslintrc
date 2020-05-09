@@ -1,6 +1,11 @@
 {
   "parser": "babel-eslint",
-  "extends": ["plugin:prettier/recommended", "eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
   "settings": {
     "react": {
       "pragma": "React",
@@ -12,7 +17,7 @@
     "node": true,
     "es6": true
   },
-  "plugins": ["prettier", "react", "react-hooks"],
+  "plugins": ["prettier", "react", "react-hooks", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
