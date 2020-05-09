@@ -11,7 +11,10 @@ function Banner() {
       <p>We spend time using good community practices to make your project scalable.</p>
 
       <sub>
-        🚀 A basis for reducing the configuration of your projects with Next.js, best development practices and popular
+        <span role="img" aria-labelledby="rocke">
+          🚀
+        </span>
+        A basis for reducing the configuration of your projects with Next.js, best development practices and popular
         libraries in the developer community.
       </sub>
 
