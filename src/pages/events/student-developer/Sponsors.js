@@ -36,8 +36,8 @@ function Sponsors() {
           </div>
 
           <div className="others">
-            <img src="/static/images/svg/r-n-b-sponsor.svg" alt="" />
-            <img src="/static/images/svg/ut-sponsor.svg" alt="" />
+            <img src="/static/images/svg/r-n-b-sponsor.svg" alt="react next boilerplate" />
+            <img src="/static/images/svg/ut-sponsor.svg" alt="ut" />
           </div>
         </div>
       </div>

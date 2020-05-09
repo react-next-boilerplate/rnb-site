@@ -102,11 +102,11 @@ function Banner() {
         }
 
         .second20 {
-          color: #00aea0;
+          color: #08a296;
         }
 
         .spanNumber {
-          color: #ff57a8;
+          color: #ec509c;
         }
 
         p {
