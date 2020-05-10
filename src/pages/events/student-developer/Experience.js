@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Calendar } from 'react-feather';
-
 import { breakpoints } from '../../../styles';
 
 function Experience() {
@@ -17,39 +15,14 @@ function Experience() {
             <h2>What you’ll experience</h2>
 
             <p className="resume">
-              3 lightning talks. Listen to experiences, tips to make development more fun, (technologies, tools) for
+              4 lightning talks. Listen to experiences, tips to make development more fun, (technologies, tools) for
               daily use, answers to 5 questions from the audience, All in a fun and friendly environment!.
             </p>
 
-            <div className="eventsDates">
-              <div>
-                <h3>UT (VIRTUAL)</h3>
-
-                <time className="date">
-                  <Calendar color="#fff" size={20} />
-
-                  <h4 className="dateTitle">May 13, 3:00pm</h4>
-                </time>
-
-                <p className="dateDescription">
-                  This webinar is directed for Students of the UT Technological University.
-                </p>
-              </div>
-
-              <div>
-                <h3>UT (VIRTUAL)</h3>
-
-                <time className="date">
-                  <Calendar color="#fff" size={20} />
-
-                  <h4 className="dateTitle">Coming soon</h4>
-                </time>
-
-                <p className="dateDescription">
-                  We are also happy to share “Student Developer. Webinar 1.0” will be open to the community
-                </p>
-              </div>
-            </div>
+            <p className="resume">
+              With the help of professional and experienced programmers in the web world, who talk about their
+              programming experiences and knowledge.
+            </p>
           </div>
         </div>
       </div>
@@ -116,55 +89,6 @@ function Experience() {
           letter-spacing: 1px;
           margin-top: 0;
           margin-bottom: 1.5rem;
-        }
-
-        .eventsDates {
-          display: flex;
-        }
-
-        .eventsDates > :not(:first-child) {
-          margin-left: 1rem;
-        }
-
-        @media ${breakpoints.down('xs')} {
-          .eventsDates {
-            flex-direction: column;
-          }
-
-          .eventsDates > :not(:first-child) {
-            margin-top: 2.5rem;
-            margin-left: 0;
-          }
-        }
-
-        h3 {
-          font-size: 1.11rem;
-          font-weight: bold;
-          letter-spacing: 1.25px;
-          margin-top: 0;
-          margin-bottom: 1.5rem;
-        }
-
-        .date {
-          display: flex;
-          align-items: center;
-        }
-
-        .date > :not(:first-child) {
-          margin-left: 1rem;
-        }
-
-        .dateTitle {
-          margin: 0;
-          font-size: 1.1rem;
-        }
-
-        .dateDescription {
-          font-weight: 300;
-          font-size: 1rem;
-          letter-spacing: 1px;
-          margin-top: 0.8rem;
-          margin-bottom: 0;
         }
       `}</style>
     </section>

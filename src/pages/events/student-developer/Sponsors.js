@@ -9,9 +9,11 @@ function Sponsors() {
     <section>
       <div className="container">
         <h2>Sponsors and partners</h2>
+
         <div className="sponsors">
           <img src="/static/images/svg/code-dev-sponsor.svg" alt="codea.dev" />
         </div>
+
         <div className="actions">
           <a
             data-category="Site-Wide Custom Events"
@@ -19,25 +21,29 @@ function Sponsors() {
             type="button"
             className="button"
             href="https://github.com/react-next-boilerplate/react-next-boilerplate/blob/canary/CONTRIBUTING.md">
-            Become a sponsor
+            BECOME A SPONSOR
           </a>
         </div>
 
-        <div className="organizers">
-          <div className="wootsbot">
-            <SpeakerCard
-              avatar={wootsbot.src}
-              name={wootsbot.name}
-              role={wootsbot.role}
-              resume={wootsbot.resume}
-              place={wootsbot.place}
-              twitter={wootsbot.twitter}
-            />
-          </div>
+        <div className="organizersWrapper">
+          <h2 className="organizerTitle">Event Organizer</h2>
 
-          <div className="others">
-            <img src="/static/images/svg/r-n-b-sponsor.svg" alt="react next boilerplate" />
-            <img src="/static/images/svg/ut-sponsor.svg" alt="ut" />
+          <div className="organizers">
+            <div className="wootsbot">
+              <SpeakerCard
+                avatar={wootsbot.src}
+                name={wootsbot.name}
+                role={wootsbot.role}
+                resume={wootsbot.resume}
+                place={wootsbot.place}
+                twitter={wootsbot.twitter}
+              />
+            </div>
+
+            <div className="others">
+              <img src="/static/images/svg/r-n-b-sponsor.svg" alt="react next boilerplate" />
+              <img src="/static/images/svg/ut-sponsor.svg" alt="ut" />
+            </div>
           </div>
         </div>
       </div>
@@ -107,7 +113,7 @@ function Sponsors() {
           letter-spacing: 0.02857em;
           font-weight: 600;
           line-height: 1.75;
-          padding: 0 80px;
+          padding: 0 30px;
           height: 40px;
           font-size: 14px;
           line-height: 2.25rem;
@@ -125,11 +131,19 @@ function Sponsors() {
           margin-top: 1.5rem;
         }
 
+        .organizersWrapper {
+          margin-top: 5rem;
+        }
+
+        .organizerTitle {
+          margin: 0;
+        }
+
         .organizers {
           display: grid;
           grid-template-columns: repeat(6, 1fr);
           grid-gap: 28px;
-          margin-top: 6.5rem;
+          margin-top: 3rem;
         }
 
         .wootsbot {

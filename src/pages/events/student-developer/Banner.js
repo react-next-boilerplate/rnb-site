@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Calendar } from 'react-feather';
+
 import { breakpoints } from '../../../styles';
 
 function Banner() {
@@ -15,19 +17,62 @@ function Banner() {
 
             <p>
               We want to contribute to the need to provide tools to university students. The initiative is to learn how
-              software is currently developed in different industries and introduce them to web development. With the
-              help of professional and experienced programmers in the web world, who talk about their programming
-              experiences and knowledge, to motivate them to create great innovative things.
+              software is currently developed in different industries and to motivate them to create great innovative
+              things.
             </p>
 
             <a
+              className="button"
               data-category="Site-Wide Custom Events"
               data-label="Hazte patrocinador"
               type="button"
-              className="button"
-              href="https://github.com/react-next-boilerplate/react-next-boilerplate/blob/canary/CONTRIBUTING.md">
-              Become a sponsor
+              href="https://ti.to/react-next-boilerplate/student-developer-webinar-2020-10">
+              BECOME A SPONSOR
             </a>
+
+            <div className="events">
+              <div>
+                <h3>VIRTUAL</h3>
+
+                <time className="date">
+                  <Calendar size={20} />
+
+                  <span className="dateTitle">May 15, 3:30pm</span>
+                </time>
+
+                <p className="eventDescription">Aimed at the University (UT).</p>
+
+                <a
+                  className="button buttonRegister"
+                  data-category="Site-Wide Custom Events"
+                  data-label="REGISTER NOW May 15, 3:30pm"
+                  type="button"
+                  href="https://ti.to/react-next-boilerplate/student-developer-webinar-2020-10">
+                  REGISTER NOW
+                </a>
+              </div>
+
+              <div>
+                <h3>VIRTUAL (MEX)</h3>
+
+                <time className="date">
+                  <Calendar size={20} />
+
+                  <span className="dateTitle">Coming soon</span>
+                </time>
+
+                <p className="eventDescription">Will be open to the community.</p>
+
+                <a
+                  className="button buttonRegister"
+                  data-category="Site-Wide Custom Events"
+                  data-label="Hazte patrocinador"
+                  type="button"
+                  href="https://ti.to/react-next-boilerplate/student-developer-webinar-2020-10">
+                  EARLY SIGN-UP
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="banner">
@@ -65,6 +110,14 @@ function Banner() {
           max-width: 33rem;
         }
 
+        .actions {
+          display: flex;
+        }
+
+        .actions > :not(:first-child) {
+          margin-left: 1rem;
+        }
+
         @media ${breakpoints.down('sm')} {
           .containerInfo {
             display: flex;
@@ -95,6 +148,7 @@ function Banner() {
         h1 {
           font-size: 3rem;
           font-weight: 500;
+          margin-bottom: 1rem;
         }
 
         .first20 {
@@ -134,7 +188,7 @@ function Banner() {
           letter-spacing: 0.02857em;
           font-weight: 600;
           line-height: 1.75;
-          padding: 0 80px;
+          padding: 0 30px;
           height: 40px;
           font-size: 14px;
           line-height: 2.25rem;
@@ -148,8 +202,60 @@ function Banner() {
           box-shadow: 0px 0px 0px 2px #000;
         }
 
-        .button {
-          margin-top: 1.5rem;
+        .buttonRegister {
+          background-color: #4444ff;
+          margin-top: 1rem;
+        }
+
+        .buttonRegister:focus {
+          box-shadow: 0px 0px 0px 2px #4444ff;
+        }
+
+        .buttonRegister:hover {
+          box-shadow: 0px 0px 0px 2px #4444ff;
+        }
+
+        .events {
+          display: flex;
+          margin-top: 2rem;
+        }
+
+        .events > :not(:first-child) {
+          margin-left: 1.2rem;
+        }
+
+        @media ${breakpoints.down('xs')} {
+          .events {
+            flex-direction: column;
+          }
+
+          .events > :not(:first-child) {
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+        }
+
+        .date {
+          display: flex;
+          align-items: center;
+        }
+
+        .date > :not(:first-child) {
+          margin-left: 1rem;
+        }
+
+        .dateTitle {
+          margin: 0;
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+
+        .eventDescription {
+          font-weight: 300;
+          font-size: 1rem;
+          letter-spacing: 1px;
+          margin-top: 0.8rem;
+          margin-bottom: 0;
         }
       `}</style>
     </section>
