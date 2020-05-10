@@ -28,7 +28,7 @@ function Experience() {
                 <time className="date">
                   <Calendar color="#fff" size={20} />
 
-                  <h4 className="dateTitle">May 15, 3:30pm</h4>
+                  <h4 className="dateTitle">May 13, 3:00pm</h4>
                 </time>
 
                 <p className="dateDescription">
@@ -46,7 +46,7 @@ function Experience() {
                 </time>
 
                 <p className="dateDescription">
-                  We’re also pleased to share registration for “Student Developer. Webinar 1.0” Virtual will be FREE
+                  We are also happy to share “Student Developer. Webinar 1.0” will be open to the community
                 </p>
               </div>
             </div>
