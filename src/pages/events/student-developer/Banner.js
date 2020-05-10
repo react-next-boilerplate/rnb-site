@@ -118,8 +118,6 @@ function Banner() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          position: relative;
-
           outline: 0;
           border: 0;
           margin: 0;

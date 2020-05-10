@@ -44,7 +44,6 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
         header {
           display: flex;
           align-items: center;
-          justify-content: space-between;
           margin-bottom: 2rem;
         }
 
@@ -61,7 +60,7 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
         }
 
         .description {
-          margin-left: 0.5rem;
+          margin-left: 1rem;
         }
 
         h3 {

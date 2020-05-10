@@ -132,6 +132,7 @@ function Experience() {
           }
 
           .eventsDates > :not(:first-child) {
+            margin-top: 2.5rem;
             margin-left: 0;
           }
         }
