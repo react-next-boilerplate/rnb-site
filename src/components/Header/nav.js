@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import Link from 'next/link';
 
-import { Github, Discord } from '@icons-pack/react-simple-icons';
+import { Github, Discord, Twitter } from '@icons-pack/react-simple-icons';
 
 function Nav({ version, onOpenMenu, open }) {
   return (
@@ -80,6 +81,16 @@ function Nav({ version, onOpenMenu, open }) {
             <Discord size={20} />
           </a>
         </li>
+
+        <li>
+          <a
+            href="https://twitter.com/RNBoilerplate"
+            data-category="Site-Wide Custom Events"
+            data-label="Link twitter"
+            className="link-circle twitter">
+            <Twitter size={20} />
+          </a>
+        </li>
       </ul>
       <style jsx>{`
         nav {
@@ -136,6 +147,12 @@ function Nav({ version, onOpenMenu, open }) {
 
         .link-circle:hover {
           color: #8d8d8d;
+        }
+
+        .twitter {
+          margin: 0;
+          margin-left: 1rem;
+          padding-right: 0;
         }
 
         .spacer {

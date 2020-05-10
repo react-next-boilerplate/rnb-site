@@ -3,7 +3,8 @@ import React from 'react';
 
 import useSWR from 'swr';
 
-import Header from '../components/Header';
+import Layout from '../components/Layout';
+
 import Banner from '../components/Banner';
 import GettingStarted from '../components/GettingStarted';
 import Features from '../components/Features';
@@ -17,7 +18,7 @@ function IndexPage() {
   const { data } = useSWR('/repos/react-next-boilerplate/react-next-boilerplate/releases/latest', request);
 
   return (
-    <>
+    <Layout version={data?.name}>
       <SocialMeta
         image="/static/images/shared.png"
         title="React Next Boilerplate"
@@ -25,8 +26,6 @@ function IndexPage() {
         description="A basis for reducing the configuration of your projects with Next.js, best development practices and popular libraries in the developer community."
         keywords="react-next-boilerplate, react, nextjs, boilerplate, javascript, redux, redux-saga, immer"
       />
-
-      <Header version={data?.name} />
 
       <Banner />
 
@@ -37,7 +36,7 @@ function IndexPage() {
       <Media />
 
       <Contributing />
-    </>
+    </Layout>
   );
 }
 
