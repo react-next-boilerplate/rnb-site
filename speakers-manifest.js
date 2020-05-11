@@ -11,8 +11,6 @@
     twitter: 'user',
 */
 
-export const mapping = {};
-
 const wootsbot = {
   name: 'Jorge L. Calleja A.',
   place: 'México',
@@ -23,6 +21,19 @@ const wootsbot = {
   src: '/static/images/speakers/wootsbot.jpg',
   twitter: 'wootsbot',
 };
+
+const afvalenciab = {
+  name: 'Andres Valencia B.',
+  place: 'México',
+  role: ' Frontend developer',
+  workplace: 'GBM',
+  resume:
+    'I am a system engineer. I love to create products and develop the skills to achieve it because the magic of the software is the easiness to transform any idea into a real product.',
+  src: '/static/images/speakers/afvalenciab.jpg',
+  twitter: 'afvalenciab',
+};
+
+export const mapping = { afvalenciab };
 
 const speakers = Object.values(mapping);
 
