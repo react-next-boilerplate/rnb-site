@@ -35,7 +35,7 @@ function Nav({ version, onOpenMenu, open }) {
 
       <ul className="navbar">
         <li>
-          <Link href="#features">
+          <Link href="/#features">
             <a data-category="Site-Wide Custom Events" data-label="Link features" className="link">
               Features
             </a>

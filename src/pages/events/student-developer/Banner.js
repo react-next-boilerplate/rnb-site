@@ -26,32 +26,11 @@ function Banner() {
               data-category="Site-Wide Custom Events"
               data-label="Hazte patrocinador"
               type="button"
-              href="https://ti.to/react-next-boilerplate/student-developer-webinar-2020-10">
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdeINbWkZnGkXNUZkLtZa2j7lfC1CS0ni4zFCmn4JPDAJuhoQ/viewform?usp=sf_link0">
               BECOME A SPONSOR
             </a>
 
             <div className="events">
-              <div>
-                <h3>VIRTUAL</h3>
-
-                <time className="date">
-                  <Calendar size={20} />
-
-                  <span className="dateTitle">May 15, 3:30pm</span>
-                </time>
-
-                <p className="eventDescription">Aimed at the University (UT).</p>
-
-                <a
-                  className="button buttonRegister"
-                  data-category="Site-Wide Custom Events"
-                  data-label="REGISTER NOW May 15, 3:30pm"
-                  type="button"
-                  href="https://ti.to/react-next-boilerplate/student-developer-webinar-2020-10">
-                  REGISTER NOW
-                </a>
-              </div>
-
               <div>
                 <h3>VIRTUAL (MEX)</h3>
 
@@ -76,8 +55,8 @@ function Banner() {
           </div>
 
           <div className="banner">
-            <img className="bannerLarge" src="/static/images/svg/banner-event-logo.svg" alt="" />
-            <img className="bannerSmall" src="/static/images/svg/banner-mobil.svg" alt="" />
+            <img className="bannerLarge" src="/static/images/svg/banner-event-logo.svg" alt="banner event" />
+            <img className="bannerSmall" src="/static/images/svg/banner-mobil.svg" alt="banner event mobil" />
           </div>
         </div>
       </div>
