@@ -21,7 +21,7 @@ function Header({ version }) {
               data-category="Site-Wide Custom Events"
               data-label="Link logo to features"
               className="link"
-              href="#features">
+              href="/#features">
               Features
             </a>
           </li>

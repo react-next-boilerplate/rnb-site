@@ -20,7 +20,7 @@ function Sponsors() {
             data-label="Hazte patrocinador"
             type="button"
             className="button"
-            href="https://github.com/react-next-boilerplate/react-next-boilerplate/blob/canary/CONTRIBUTING.md">
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdeINbWkZnGkXNUZkLtZa2j7lfC1CS0ni4zFCmn4JPDAJuhoQ/viewform?usp=sf_link0">
             BECOME A SPONSOR
           </a>
         </div>
@@ -42,7 +42,6 @@ function Sponsors() {
 
             <div className="others">
               <img src="/static/images/svg/r-n-b-sponsor.svg" alt="react next boilerplate" />
-              <img src="/static/images/svg/ut-sponsor.svg" alt="ut" />
             </div>
           </div>
         </div>
