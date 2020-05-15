@@ -33,7 +33,18 @@ const afvalenciab = {
   twitter: 'afvalenciab',
 };
 
-export const mapping = { afvalenciab };
+const paulinagavilan = {
+  name: 'Paulina Gavilán',
+  place: 'France',
+  role: ' Front-End developer',
+  workplace: 'Prismic',
+  resume:
+    'Creativity must be an area of ​​life that must be kept in constant motion. Illustration and code are the tools I use to communicate with the world.',
+  src: '/static/images/speakers/paulina.jpg',
+  twitter: 'paulievpg',
+};
+
+export const mapping = { afvalenciab, paulinagavilan };
 
 const speakers = Object.values(mapping);
 
