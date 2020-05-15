@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { Github, Discord } from '@icons-pack/react-simple-icons';
+import { Github, Discord, Twitter } from '@icons-pack/react-simple-icons';
 
 import Nav from './nav';
 
@@ -21,7 +21,7 @@ function Header({ version }) {
               data-category="Site-Wide Custom Events"
               data-label="Link logo to features"
               className="link"
-              href="#features">
+              href="/#features">
               Features
             </a>
           </li>
@@ -63,6 +63,16 @@ function Header({ version }) {
               data-label="Link Discord"
               className="link-circle">
               <Discord size={20} />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://twitter.com/RNBoilerplate"
+              data-category="Site-Wide Custom Events"
+              data-label="Link twitter"
+              className="link-circle">
+              <Twitter size={20} />
             </a>
           </li>
         </ul>
