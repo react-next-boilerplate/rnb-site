@@ -27,17 +27,18 @@
     ]
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^3.0.0-alpha.0",
+    "@icons-pack/react-simple-icons": "^3.12.0",
     "@typefaces-pack/typeface-inter": "^1.0.3",
-    "next": "^9.3.6",
-    "next-pwa": "^2.3.3",
+    "fontsource-metropolis": "^3.0.1",
+    "fontsource-roboto-mono": "^3.0.3",
+    "next": "^9.5.5",
+    "next-pwa": "^3.1.5",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-feather": "^2.0.8",
-    "swr": "^0.2.0",
-    "typeface-metropolis": "^0.0.74",
-    "typeface-roboto-mono": "^0.0.75"
+    "swr": "^0.3.6",
+    "typeface-roboto-mono": "^1.1.13"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
