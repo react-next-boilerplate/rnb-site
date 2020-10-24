@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Link from 'next/link';
 
-import { Github, Discord, Twitter } from '@icons-pack/react-simple-icons';
+import { Github, Twitter, Twitch, Linkedin } from '@icons-pack/react-simple-icons';
 
 function Nav({ version, onOpenMenu, open }) {
   return (
@@ -44,16 +44,20 @@ function Nav({ version, onOpenMenu, open }) {
 
         <li>
           <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation"
             data-category="Site-Wide Custom Events"
             data-label="Link Docs"
-            className="link"
-            href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
+            className="link">
             Docs
           </a>
         </li>
 
         <li>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip"
             data-category="Site-Wide Custom Events"
             data-label="Link Download"
@@ -64,6 +68,8 @@ function Nav({ version, onOpenMenu, open }) {
 
         <li>
           <a
+            target="_blank"
+            rel="noreferrer"
             href="https://github.com/react-next-boilerplate/react-next-boilerplate"
             data-category="Site-Wide Custom Events"
             data-label="Link Github"
@@ -74,16 +80,32 @@ function Nav({ version, onOpenMenu, open }) {
 
         <li>
           <a
-            href="https://discord.gg/ANbWXGs"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.twitch.tv/reactnextboilerplate/about"
             data-category="Site-Wide Custom Events"
-            data-label="Link Discord"
+            data-label="Link Twitch"
             className="link-circle">
-            <Discord size={20} />
+            <Twitch size={20} />
           </a>
         </li>
 
         <li>
           <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/company/react-next-boilerplate"
+            data-category="Site-Wide Custom Events"
+            data-label="Link linkedin"
+            className="link-circle">
+            <Linkedin size={20} />
+          </a>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
             href="https://twitter.com/RNBoilerplate"
             data-category="Site-Wide Custom Events"
             data-label="Link twitter"

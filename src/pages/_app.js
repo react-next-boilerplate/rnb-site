@@ -4,8 +4,8 @@ import React from 'react';
 import Head from 'next/head';
 import App from 'next/app';
 
-import 'typeface-metropolis';
-import 'typeface-roboto-mono';
+import 'fontsource-metropolis';
+import 'fontsource-roboto-mono';
 import '@typefaces-pack/typeface-inter';
 
 if (process.browser && process.env.NODE_ENV === 'production') {
@@ -26,6 +26,7 @@ class Srr extends App {
       <>
         <Head>
           <title>React Next Boilerplate</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
 
         <Component {...pageProps} />
