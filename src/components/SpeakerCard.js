@@ -21,24 +21,38 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
         <p className="resumeText">{resume}</p>
       </div>
 
+      <div className="spacer" />
+
       <footer>
         <div className="place">
           <MapPin size={20} />
           <span>{place}</span>
         </div>
 
-        <div className="social">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation"
+          data-category="Site-Wide Custom Events"
+          data-label="Link social"
+          className="social">
           <Twitter size={20} />
           <span>{twitter}</span>
-        </div>
+        </a>
       </footer>
 
       <style jsx>{`
         .speakerCard {
+          display: flex;
+          flex-direction: column;
           background-color: #ffffff;
           border-radius: 1rem;
           padding: 1.5rem;
           box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .spacer {
+          flex: 1;
         }
 
         header {
@@ -103,6 +117,7 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
         .social {
           display: flex;
           align-items: center;
+          color: #000;
         }
 
         .social > :not(:first-child) {
