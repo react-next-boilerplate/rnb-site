@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { Github, Discord, Twitter } from '@icons-pack/react-simple-icons';
+import { Github, Twitch, Discord, Twitter, Linkedin } from '@icons-pack/react-simple-icons';
 
 import Nav from './nav';
 
@@ -18,6 +18,8 @@ function Header({ version }) {
         <ul className="navbar-mobile">
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
               data-category="Site-Wide Custom Events"
               data-label="Link logo to features"
               className="link"
@@ -28,36 +30,56 @@ function Header({ version }) {
 
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation"
               data-category="Site-Wide Custom Events"
               data-label="Link logo to Docs"
-              className="link"
-              href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation">
+              className="link">
               Docs
             </a>
           </li>
 
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip"
               data-category="Site-Wide Custom Events"
               data-label="Link logo to Download"
-              className="link"
-              href="https://github.com/react-next-boilerplate/react-next-boilerplate/archive/master.zip">
+              className="link">
               Download
             </a>
           </li>
 
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/react-next-boilerplate/react-next-boilerplate"
               data-category="Site-Wide Custom Events"
               data-label="Link logo to Github"
-              className="link-circle"
-              href="https://github.com/react-next-boilerplate/react-next-boilerplate">
+              className="link-circle">
               <Github size={20} />
             </a>
           </li>
 
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.twitch.tv/reactnextboilerplate/about"
+              data-category="Site-Wide Custom Events"
+              data-label="Link Twitch"
+              className="link-circle">
+              <Twitch size={20} />
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://discord.gg/ANbWXGs"
               data-category="Site-Wide Custom Events"
               data-label="Link Discord"
@@ -68,6 +90,20 @@ function Header({ version }) {
 
           <li>
             <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/company/react-next-boilerplate"
+              data-category="Site-Wide Custom Events"
+              data-label="Link linkedin"
+              className="link-circle">
+              <Linkedin size={20} />
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://twitter.com/RNBoilerplate"
               data-category="Site-Wide Custom Events"
               data-label="Link twitter"
