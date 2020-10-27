@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { Github, Twitch, Twitter, Linkedin } from '@icons-pack/react-simple-icons';
+import { Github, Twitch, Discord, Twitter, Linkedin } from '@icons-pack/react-simple-icons';
 
 import Nav from './nav';
 
@@ -73,6 +73,18 @@ function Header({ version }) {
               data-label="Link Twitch"
               className="link-circle">
               <Twitch size={20} />
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://discord.gg/ANbWXGs"
+              data-category="Site-Wide Custom Events"
+              data-label="Link Discord"
+              className="link-circle">
+              <Discord size={20} />
             </a>
           </li>
 

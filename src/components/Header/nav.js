@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Link from 'next/link';
 
-import { Github, Twitter, Twitch, Linkedin } from '@icons-pack/react-simple-icons';
+import { Github, Twitter, Twitch, Linkedin, Discord } from '@icons-pack/react-simple-icons';
 
 function Nav({ version, onOpenMenu, open }) {
   return (
@@ -87,6 +87,18 @@ function Nav({ version, onOpenMenu, open }) {
             data-label="Link Twitch"
             className="link-circle">
             <Twitch size={20} />
+          </a>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://discord.gg/ANbWXGs"
+            data-category="Site-Wide Custom Events"
+            data-label="Link Discord"
+            className="link-circle">
+            <Discord size={20} />
           </a>
         </li>
 
