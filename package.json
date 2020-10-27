@@ -31,7 +31,7 @@
     "@typefaces-pack/typeface-inter": "^1.0.3",
     "fontsource-metropolis": "^3.0.1",
     "fontsource-roboto-mono": "^3.0.3",
-    "next": "^9.5.5",
+    "next": "^10.0.0",
     "next-pwa": "^3.1.5",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
