@@ -44,7 +44,18 @@ const paulinagavilan = {
   twitter: 'paulievpg',
 };
 
-export const mapping = { afvalenciab, paulinagavilan };
+const jerolan = {
+  name: 'Jerome Olvera',
+  place: 'México',
+  role: ' Front-End developer',
+  workplace: 'GBM',
+  resume:
+    'Passionate about technology, culture, team building. Big fan of UX Design and Lean Thinking. I love to build products that people want to use.',
+  src: '/static/images/speakers/jerolan.jpg',
+  twitter: 'sediceyerom',
+};
+
+export const mapping = { afvalenciab, paulinagavilan, jerolan };
 
 const speakers = Object.values(mapping);
 
