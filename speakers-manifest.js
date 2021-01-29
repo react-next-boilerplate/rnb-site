@@ -55,7 +55,18 @@ const jerolan = {
   twitter: 'sediceyerom',
 };
 
-export const mapping = { afvalenciab, paulinagavilan, jerolan };
+const vic = {
+  name: 'Victor Aguilar C.',
+  place: 'La Paz, Bolivia',
+  role: 'Software Engineer',
+  workplace: 'Parrot Software',
+  resume:
+    'I love programming and create products with technology, team building and mentoring. Technology is for me one of the biggest game changers in the life',
+  src: '/static/images/speakers/vic.jpg',
+  twitter: 'sediceyerom',
+};
+
+export const mapping = { afvalenciab, paulinagavilan, jerolan, vic };
 
 const speakers = Object.values(mapping);
 
