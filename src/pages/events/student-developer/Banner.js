@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Image from 'next/image';
 import { Calendar } from 'react-feather';
 
 import { breakpoints } from '../../../styles';
@@ -55,7 +56,14 @@ function Banner() {
           </div>
 
           <div className="banner">
-            <img className="bannerLarge" src="/static/images/svg/banner-event-logo.svg" alt="banner event" />
+            <Image
+              className="bannerLarge"
+              src="/static/images/svg/banner-event-logo.svg"
+              alt="banner event"
+              lazy="eager"
+              width={407}
+              height={264}
+            />
             <img className="bannerSmall" src="/static/images/svg/banner-mobil.svg" alt="banner event mobil" />
           </div>
         </div>
