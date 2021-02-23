@@ -8,7 +8,7 @@ import BannerEvent from '../BannerEvent';
 
 function Layout({ version, children }) {
   const router = useRouter();
-  const isShowBannerEvent = process?.env?.NEXT_PUBLIC_IS_ENABLE_EVENT_SDW;
+  const isShowBannerEvent = process?.env?.NEXT_PUBLIC_IS_ENABLE_EVENT_SDW === 'AVAILABLE' || false;
 
   return (
     <>
