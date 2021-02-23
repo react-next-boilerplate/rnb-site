@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+import { useRouter } from 'next/router';
+
 import { Github, Twitch, Discord, Twitter, Linkedin } from '@icons-pack/react-simple-icons';
 
 import Nav from './nav';
+import BannerEvent from '../BannerEvent';
 
 function Header({ version }) {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
+  const isShowBannerEvent = process?.env?.NEXT_PUBLIC_IS_ENABLE_EVENT_SDW === 'AVAILABLE' || false;
 
   return (
     <header>
+      {router.pathname !== '/events/student-developer' && isShowBannerEvent && <BannerEvent />}
+
       <div className="header-nav">
         <Nav version={version} open={open} onOpenMenu={() => setOpen(!open)} />
       </div>
-
       {open && (
         <ul className="navbar-mobile">
           <li>
@@ -113,7 +119,6 @@ function Header({ version }) {
           </li>
         </ul>
       )}
-
       <style jsx>{`
         header {
           position: sticky;
