@@ -947,10 +947,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@icons-pack/react-simple-icons@^3.13.0":
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-3.13.0.tgz#7ffe6c7f8500329d86ae1265e5d8a1af12ac122b"
-  integrity sha512-y66dozS9pBBMDopswZfrdDnDXqrlc+XL8LSmKZTJngtdHPL+WJoBTzXTQVzc7H3NyVGJQWhQuqt09CgnbPwNZw==
+"@icons-pack/react-simple-icons@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-4.1.0.tgz#6997e44030ebbb923226a249abd29d0158a1c2fd"
+  integrity sha512-LgmzYYqC8t5g7DiBMyXTwwsA6cw8egVwkLC+CoCIrPtlp5QkPuGikrJ7V0ElELOAT2YBsh96i5EEkSuoUkKvSg==
   dependencies:
     prop-types "^15.7.2"
 

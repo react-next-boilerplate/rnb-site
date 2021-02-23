@@ -29,16 +29,18 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
           <span>{place}</span>
         </div>
 
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/react-next-boilerplate/react-next-boilerplate#documentation"
-          data-category="Site-Wide Custom Events"
-          data-label="Link social"
-          className="social">
-          <Twitter size={20} />
-          <span>{twitter}</span>
-        </a>
+        {twitter && (
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={`https://twitter.com/${twitter}`}
+            data-category="Site-Wide Custom Events"
+            data-label="Link social"
+            className="social">
+            <Twitter size={20} />
+            <span>{twitter}</span>
+          </a>
+        )}
       </footer>
 
       <style jsx>{`
