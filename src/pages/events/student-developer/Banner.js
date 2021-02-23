@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 
+import Image from 'next/image';
 import { Calendar } from 'react-feather';
 
 import { breakpoints } from '../../../styles';
@@ -12,7 +14,7 @@ function Banner() {
           <div className="containerInfo">
             <h1>
               Student Developer. Webinar <span className="first20">20</span>
-              <span className="second20">20</span> <span className="spanNumber">1.0</span>
+              <span className="second20">21</span> <span className="spanNumber">1.0</span>
             </h1>
 
             <p>
@@ -26,7 +28,8 @@ function Banner() {
               data-category="Site-Wide Custom Events"
               data-label="Hazte patrocinador"
               type="button"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdeINbWkZnGkXNUZkLtZa2j7lfC1CS0ni4zFCmn4JPDAJuhoQ/viewform?usp=sf_link0">
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdeINbWkZnGkXNUZkLtZa2j7lfC1CS0ni4zFCmn4JPDAJuhoQ/viewform?usp=sf_link0"
+              target="_blank">
               BECOME A SPONSOR
             </a>
 
@@ -37,7 +40,7 @@ function Banner() {
                 <time className="date">
                   <Calendar size={20} />
 
-                  <span className="dateTitle">Coming soon</span>
+                  <span className="dateTitle">26 Mar 2021</span>
                 </time>
 
                 <p className="eventDescription">Will be open to the community.</p>
@@ -47,16 +50,27 @@ function Banner() {
                   data-category="Site-Wide Custom Events"
                   data-label="Hazte patrocinador"
                   type="button"
-                  href="https://ti.to/react-next-boilerplate/student-developer-webinar-2020-10">
+                  href="https://ti.to/react-next-boilerplate/student-developer-webinar-2020-10"
+                  target="_blank">
                   EARLY SIGN-UP
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="banner">
-            <img className="bannerLarge" src="/static/images/svg/banner-event-logo.svg" alt="banner event" />
-            <img className="bannerSmall" src="/static/images/svg/banner-mobil.svg" alt="banner event mobil" />
+          <div className="bannerLarge">
+            <Image
+              src="/static/images/svg/banner-event-logo.svg"
+              alt="banner event"
+              lazy="eager"
+              width={407}
+              height={264}
+              layout="responsive"
+            />
+          </div>
+
+          <div className="bannerSmall">
+            <img src="/static/images/svg/banner-mobil.svg" alt="banner event mobil" />
           </div>
         </div>
       </div>
@@ -106,10 +120,12 @@ function Banner() {
         }
 
         .bannerSmall {
+          width: 100%;
           display: none;
         }
 
         .bannerLarge {
+          width: 100%;
           display: block;
         }
 
