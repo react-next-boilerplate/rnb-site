@@ -50,7 +50,7 @@ function Banner() {
                   data-category="Site-Wide Custom Events"
                   data-label="Hazte patrocinador"
                   type="button"
-                  href="https://ti.to/react-next-boilerplate/student-developer-webinar-2021"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfu3luPAnlDif1kWRPii17a5_kgSuoVWQbA1wCzKvlmSpuP2Q/viewform?usp=sf_link"
                   target="_blank">
                   EARLY SIGN-UP
                 </a>
