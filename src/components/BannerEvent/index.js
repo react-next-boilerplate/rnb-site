@@ -7,16 +7,23 @@ import { breakpoints } from '../../styles';
 
 function BannerEvent() {
   return (
-    <div className="banner">
-      <Link href="/events/student-developer">
-        <img className="linkImage" src="/static/images/svg/banner_event_title.svg" alt="Banner" />
-      </Link>
+    <div className="row">
+      <div className="banner">
+        <Link href="/events/student-developer">
+          <img className="linkImage" src="/static/images/svg/banner_event_title.svg" alt="Banner" />
+        </Link>
 
-      <Link href="/events/student-developer">
-        <a className="link">watch the details of the first webinar 1.0 →</a>
-      </Link>
-
+        <Link href="/events/student-developer">
+          <a className="link">watch the details of the first webinar 1.0 →</a>
+        </Link>
+      </div>
       <style jsx>{`
+        .row {
+          border-width: 10px 0 0;
+          border-top-style: solid;
+          border-image: linear-gradient(139deg, #85f, #0bc, #fa0, #0bc) 3;
+        }
+
         .banner {
           display: flex;
           align-items: center;
