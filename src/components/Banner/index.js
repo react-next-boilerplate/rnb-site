@@ -1,9 +1,17 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 function Banner() {
   return (
     <section>
-      <img aria-label="React Next Boilerplate banner logo" alt="banner logo" src="/static/images/svg/banner-logo.svg" />
+      <Image
+        aria-label="React Next Boilerplate banner logo"
+        alt="banner logo"
+        src="/static/images/svg/banner-logo.svg"
+        width={150}
+        height={150}
+      />
 
       <h1>React Next Boilerplate</h1>
 
