@@ -63,7 +63,7 @@ const vic = {
   resume:
     'I love programming and create products with technology, team building and mentoring. Technology is for me one of the biggest game changers in the life',
   src: '/static/images/speakers/vic.jpg',
-  twitter: 'sediceyerom',
+  twitter: null,
 };
 
 export const mapping = { afvalenciab, paulinagavilan, jerolan, vic };
