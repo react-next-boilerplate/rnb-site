@@ -124,6 +124,7 @@ function Header({ version }) {
           position: sticky;
           top: 0;
           background-color: black;
+          z-index: 1300;
         }
 
         .header-nav {

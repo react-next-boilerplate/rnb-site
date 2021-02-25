@@ -21,7 +21,7 @@ function BannerEvent() {
         .row {
           border-width: 10px 0 0;
           border-top-style: solid;
-          border-image: linear-gradient(139deg, #85f, #0bc, #fa0, #0bc) 3;
+          border-image: linear-gradient(139deg, #85f, #0bc) 3;
           background-color: #ffffff;
         }
 
