@@ -7,9 +7,9 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
   return (
     <div className="speakerCard">
       <header>
-        <figure>
+        <div className="avatarWrapper">
           <img className="avatar" src={avatar} alt={name} />
-        </figure>
+        </div>
 
         <div className="description">
           <h3>{name}</h3>
@@ -69,9 +69,31 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
           margin: 0;
         }
 
+        .avatarWrapper {
+          display: inline-block;
+          z-index: 0;
+          position: relative;
+          width: 4rem;
+          height: 4rem;
+        }
+
+        .avatarWrapper::before {
+          display: inline-block;
+          z-index: 0;
+          position: relative;
+          inset: 0px;
+          margin: -3px;
+          content: '';
+          display: block;
+          z-index: -1;
+          position: absolute;
+          background: linear-gradient(to right bottom, #85f, #0bc);
+          border-radius: 50%;
+        }
+
         .avatar {
-          width: 100%;
-          height: 100%;
+          width: 4rem;
+          height: 4rem;
           border-radius: 50%;
           object-fit: cover;
         }
