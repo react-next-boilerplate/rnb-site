@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { MapPin, Twitter } from 'react-feather';
 
-function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
+function SpeakerCard({ avatar, name, role, resume, place, twitter, workplace }) {
   return (
     <div className="speakerCard">
       <header>
@@ -15,9 +15,13 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
 
         <div className="description">
           <h3>{name}</h3>
-          <p className="descriptionText">{role}</p>
+          <p className="roleText">{role}</p>
         </div>
       </header>
+
+      <div>
+        <h3 className="workplaceText">{workplace}</h3>
+      </div>
 
       <div className="resume">
         <p className="resumeText">{resume}</p>
@@ -62,7 +66,7 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
         header {
           display: flex;
           align-items: center;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
         }
 
         figure {
@@ -120,23 +124,37 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
           margin-left: 1rem;
         }
 
+        .description > :not(:first-child) {
+          margin-top: 0.5rem;
+        }
+
         h3 {
+          font-size: 1.125rem;
           margin: 0;
-          margin-bottom: 0.5rem;
           font-size: 1.12rem;
           letter-spacing: 1.13px;
         }
 
-        .descriptionText {
+        .workplaceText {
+          font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+          font-weight: 500;
+          letter-spacing: 1.13px;
+        }
+
+        .roleText {
           margin: 0;
+          font-size: 0.875rem;
+          color: hsl(0deg 0% 0% / 70%);
         }
 
         .resume {
           margin-bottom: 2rem;
+          margin-top: 0.5rem;
         }
 
         .resumeText {
-          font-size: 20px;
+          color: hsl(0deg 0% 0% / 70%);
+          font-size: 1.125rem;
           letter-spacing: 1.25px;
           line-height: 1.4;
         }
@@ -150,6 +168,7 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter }) {
         .place {
           display: flex;
           align-items: center;
+          color: #000;
         }
 
         .place > :not(:first-child) {
@@ -176,6 +195,7 @@ SpeakerCard.propTypes = {
   role: PropTypes.string,
   resume: PropTypes.string,
   place: PropTypes.string,
+  workplace: PropTypes.string,
   twitter: PropTypes.string,
 };
 

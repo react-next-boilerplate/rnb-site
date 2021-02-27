@@ -84,6 +84,7 @@ function Experience() {
         }
 
         .resume {
+          font-size: 1.25rem;
           font-weight: 300;
           line-height: 1.5;
           letter-spacing: 1px;

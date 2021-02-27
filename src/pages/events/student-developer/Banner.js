@@ -40,7 +40,7 @@ function Banner() {
                 <time className="date">
                   <Calendar size={20} />
 
-                  <span className="dateTitle">26 Mar 2021</span>
+                  <span className="dateTitle">31 Mar 2021, 1:30 PM</span>
                 </time>
 
                 <p className="eventDescription">Will be open to the community.</p>
@@ -88,7 +88,6 @@ function Banner() {
 
         .wrapper {
           display: flex;
-          align-items: center;
           justify-content: space-between;
         }
 
@@ -99,6 +98,7 @@ function Banner() {
         }
 
         .containerInfo {
+          margin-top: 2.5rem;
           width: 100%;
           max-width: 33rem;
         }
@@ -125,6 +125,8 @@ function Banner() {
         }
 
         .bannerLarge {
+          margin-top: 2.5rem;
+          margin-left: 3rem;
           width: 100%;
           display: block;
         }
@@ -143,7 +145,7 @@ function Banner() {
         h1 {
           font-size: 3rem;
           font-weight: 500;
-          margin-bottom: 1rem;
+          margin: 0;
         }
 
         .first20 {
@@ -159,6 +161,7 @@ function Banner() {
         }
 
         p {
+          font-size: 1.25rem;
           font-weight: 500;
           line-height: 1.5;
         }
