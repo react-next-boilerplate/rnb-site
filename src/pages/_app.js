@@ -4,9 +4,9 @@ import React from 'react';
 import Head from 'next/head';
 import App from 'next/app';
 
-import 'fontsource-metropolis';
-import 'fontsource-roboto-mono';
-import '@typefaces-pack/typeface-inter';
+import '@fontsource/metropolis';
+import '@fontsource/roboto-mono';
+import '@fontsource/inter';
 
 if (process.browser && process.env.NODE_ENV === 'production') {
   console.log(

@@ -889,6 +889,21 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@fontsource/inter@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.2.1.tgz#f91177509d4616488c92a137cd77f197ab366078"
+  integrity sha512-zIE1066du7y3LLL4V3Ot4BgwE3XC3MbmTBJYG7alAuXUuPGVr/2Mmt+BG9rp4ucF5An+iwZ1HcdS8CQnapMcRw==
+
+"@fontsource/metropolis@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/metropolis/-/metropolis-4.2.1.tgz#49b69c0e3ff940bf2d94ee45627fa1fe3528f59f"
+  integrity sha512-PhXqIWHqD+HyTkZr1XT7irKhaObRmHLz+d0js/NuoI30md0X4LXMxkolCL5EbmSDXNXW36nT+A1HCKW71oyd6w==
+
+"@fontsource/roboto-mono@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-4.2.1.tgz#7cc321685a1521fd88c94ae56b6f7752d1397711"
+  integrity sha512-bA7CWIDl2bM55lnMyJSk+0JI2sqdMcqdoabMGXGfiiZEltiuByYHuFg7msj0RC2AW4iFm74KwzAvpSzYwVk2mQ==
+
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.1.tgz#068553e867f0f63225a506ed74e899441af53e10"

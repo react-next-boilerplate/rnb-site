@@ -37,6 +37,7 @@ function Sponsors() {
                 resume={wootsbot.resume}
                 place={wootsbot.place}
                 twitter={wootsbot.twitter}
+                workplace={wootsbot.workplace}
               />
             </div>
 

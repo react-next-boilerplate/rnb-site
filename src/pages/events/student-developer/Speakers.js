@@ -22,6 +22,7 @@ function Speakers() {
               resume={speaker.resume}
               place={speaker.place}
               twitter={speaker.twitter}
+              workplace={speaker.workplace}
             />
           ))}
         </div>

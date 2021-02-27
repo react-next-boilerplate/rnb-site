@@ -15,7 +15,7 @@ const wootsbot = {
   name: 'Jorge L. Calleja A.',
   place: 'México',
   role: 'Frontend UI',
-  workplace: 'GBM',
+  workplace: 'Parrot Software',
   resume:
     'Doing this "n" that. I am a JavaScript developer, living in Mexico. I am a co-author of React Next Boilerplate and a builder of things. open source enthusiast. I am a passionate photographer.',
   src: '/static/images/speakers/wootsbot.jpg',
@@ -66,7 +66,18 @@ const vic = {
   twitter: null,
 };
 
-export const mapping = { afvalenciab, paulinagavilan, jerolan, vic };
+const luisFer = {
+  name: 'Luis F. Vazquez A.',
+  place: 'México, CDMX',
+  role: 'Deputy Director of BaaS/APIs',
+  workplace: 'Banco Santander México',
+  resume:
+    'Professional with experience in the analysis and design of APIs oriented to an API design as a product in charge of the APIs area of ​​the Santander digital factory',
+  src: '/static/images/speakers/luisFer.jpg',
+  twitter: 'fercholml',
+};
+
+export const mapping = { afvalenciab, paulinagavilan, jerolan, vic, luisFer };
 
 const speakers = Object.values(mapping);
 

@@ -27,6 +27,9 @@
     ]
   },
   "dependencies": {
+    "@fontsource/inter": "^4.2.1",
+    "@fontsource/metropolis": "^4.2.1",
+    "@fontsource/roboto-mono": "^4.2.1",
     "@icons-pack/react-simple-icons": "^4.1.0",
     "@typefaces-pack/typeface-inter": "^1.0.3",
     "fontsource-metropolis": "^3.0.1",
