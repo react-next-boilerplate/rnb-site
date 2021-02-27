@@ -1078,11 +1078,6 @@
     ejs "^2.6.1"
     magic-string "^0.25.0"
 
-"@typefaces-pack/typeface-inter@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@typefaces-pack/typeface-inter/-/typeface-inter-1.0.3.tgz#bdeb38b40fcef1383a2865292ed777bb376281d7"
-  integrity sha512-5vuUFYeAFCJ9Bv23EmicIhF4F0vGyj7CLouRZn5O1Gvzq23XEUghN0nOL7WU1NjyqDBdDEpT66/hsVjXvTNnjw==
-
 "@types/anymatch@*":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
@@ -3313,16 +3308,6 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
-
-fontsource-metropolis@^3.0.1:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-metropolis/-/fontsource-metropolis-3.1.5.tgz#2d8c522bebe1b98ccddba6245490d1b0f32dfcee"
-  integrity sha512-iTPzUftotqosng2qNlvNWw6EyZyzNNJWyTqzMZ0uk1Nl4bMxTLMITNiF7nezqCJtKwZ3EIXtgN3bWxJVs/luyw==
-
-fontsource-roboto-mono@^3.0.3:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/fontsource-roboto-mono/-/fontsource-roboto-mono-3.1.6.tgz#0223c20f4fbac4762a056b67eb08c8cdc08db36b"
-  integrity sha512-Evl8kuBf9xWx6zA1sBQd8qjSo0KgYg4+e7ZZK69e+izjOvLOIeTpcwz9ALDLv9AMZvcOvbdMUztxHXG0ntmFEw==
 
 for-in@^1.0.2:
   version "1.0.2"
