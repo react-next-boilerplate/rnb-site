@@ -18,11 +18,9 @@ function Banner() {
             </h1>
 
             <p>
-              We want to contribute to the need to provide tools to university students. The initiative is to learn how
-              software is currently developed in different industries and to motivate them to create great innovative
-              things.
+              We want to contribute to the need to provide tools to university students. With the initiative to learn
+              how software is developed in different industries to motivate them to create great innovative things.
             </p>
-
             <a
               className="button"
               data-category="Site-Wide Custom Events"
@@ -32,7 +30,6 @@ function Banner() {
               target="_blank">
               BECOME A SPONSOR
             </a>
-
             <div className="events">
               <div>
                 <h3>VIRTUAL (MEX)</h3>
@@ -40,7 +37,8 @@ function Banner() {
                 <time className="date">
                   <Calendar size={20} />
 
-                  <span className="dateTitle">31 Mar 2021, 1:30 PM</span>
+                  {/* <span className="dateTitle">31 Mar 2021, 1:30 PM</span> */}
+                  <span className="dateTitle">Coming soon...</span>
                 </time>
 
                 <p className="eventDescription">Will be open to the community.</p>
