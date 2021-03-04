@@ -25,7 +25,7 @@ const wootsbot = {
 const afvalenciab = {
   name: 'Andres Valencia B.',
   place: 'México',
-  role: ' Frontend developer',
+  role: 'Frontend developer',
   workplace: 'GBM',
   resume:
     'I am a system engineer. I love to create products and develop the skills to achieve it because the magic of the software is the easiness to transform any idea into a real product.',
@@ -36,7 +36,7 @@ const afvalenciab = {
 const paulinagavilan = {
   name: 'Paulina Gavilán',
   place: 'France',
-  role: ' Front-End developer',
+  role: 'Front-End developer',
   workplace: 'Prismic',
   resume:
     'Creativity must be an area of ​​life that must be kept in constant motion. Illustration and code are the tools I use to communicate with the world.',
@@ -47,7 +47,7 @@ const paulinagavilan = {
 const jerolan = {
   name: 'Jerome Olvera',
   place: 'México',
-  role: ' Front-End developer',
+  role: 'Front-End developer',
   workplace: 'GBM',
   resume:
     'Passionate about technology, culture, team building. Big fan of UX Design and Lean Thinking. I love to build products that people want to use.',
@@ -77,7 +77,19 @@ const luisFer = {
   twitter: 'fercholml',
 };
 
-export const mapping = { afvalenciab, paulinagavilan, jerolan, vic, luisFer };
+const dayra = {
+  name: 'Dayra Arrieta',
+  place: 'CDMX',
+  role: 'UX/UI Designer',
+  workplace: 'Parrot Software',
+  resume:
+    ' I am a multidisciplinary designer focused on UX / UI based in Mexico city. My daily challenge is to find the balance between aesthetics and functionality and trying to avoid that my dogs eat my charger. Also, I enjoy cooking, making Illustrations, and branding in my free time.',
+  src: '/static/images/speakers/day.jpg',
+  twitter: null,
+  dribbble: 'dayraarrieta',
+};
+
+export const mapping = { afvalenciab, paulinagavilan, jerolan, vic, luisFer, dayra };
 
 const speakers = Object.values(mapping);
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { MapPin, Twitter } from 'react-feather';
+import { MapPin, Twitter, Dribbble } from 'react-feather';
 
-function SpeakerCard({ avatar, name, role, resume, place, twitter, workplace }) {
+function SpeakerCard({ avatar, name, role, resume, place, twitter, dribbble, workplace }) {
   return (
     <div className="speakerCard">
       <header>
@@ -45,6 +45,19 @@ function SpeakerCard({ avatar, name, role, resume, place, twitter, workplace }) 
             className="social">
             <Twitter size={20} />
             <span>{twitter}</span>
+          </a>
+        )}
+
+        {dribbble && !twitter && (
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={`https://dribbble.com/${dribbble}`}
+            data-category="Site-Wide Custom Events"
+            data-label="Link social"
+            className="social">
+            <Dribbble size={20} />
+            <span>{dribbble}</span>
           </a>
         )}
       </footer>
@@ -197,6 +210,7 @@ SpeakerCard.propTypes = {
   place: PropTypes.string,
   workplace: PropTypes.string,
   twitter: PropTypes.string,
+  dribbble: PropTypes.string,
 };
 
 export default SpeakerCard;
