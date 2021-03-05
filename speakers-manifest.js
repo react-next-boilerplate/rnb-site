@@ -89,7 +89,19 @@ const dayra = {
   dribbble: 'dayraarrieta',
 };
 
-export const mapping = { afvalenciab, paulinagavilan, jerolan, vic, luisFer, dayra };
+const gerald = {
+  name: 'Gerald Cortes',
+  place: 'MX, IL',
+  role: 'Resource Manager',
+  workplace: 'Red Hat',
+  resume:
+    'I am a psychologist immersed in the world of technology. I have a background in human resources, recruitment and training  Now I am part of the PMO, coordinating teams at national and international level I enjoy traveling, eating and I love cats :)',
+  src: '/static/images/speakers/gerald.jpeg',
+  twitter: 'Angididiere',
+  dribbble: null,
+};
+
+export const mapping = { afvalenciab, paulinagavilan, jerolan, vic, luisFer, dayra, gerald };
 
 const speakers = Object.values(mapping);
 
