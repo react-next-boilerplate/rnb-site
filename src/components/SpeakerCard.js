@@ -5,7 +5,7 @@ import { MapPin, Twitter, Dribbble } from 'react-feather';
 
 function SpeakerCard({ avatar, name, role, resume, place, twitter, dribbble, workplace }) {
   return (
-    <div className="speakerCard">
+    <div id={name} className="speakerCard">
       <header>
         <div className="avatarBg">
           <div className="avatarWrapper">
