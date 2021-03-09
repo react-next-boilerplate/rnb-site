@@ -101,7 +101,19 @@ const gerald = {
   dribbble: null,
 };
 
-export const mapping = { afvalenciab, paulinagavilan, jerolan, vic, luisFer, dayra, gerald };
+const migsar = {
+  name: 'Migsar Navarro',
+  place: 'Porto, Portugal',
+  role: 'Developer',
+  workplace: 'Clutch.io',
+  resume:
+    'Full-stack javascript developer living in Porto, Portugal, with his girl and their baby daughter. He enjoys creating useful, performant and beautiful web applications. Code is meant to be read by humans.',
+  src: '/static/images/speakers/migsar.jpg',
+  twitter: 'migsarnavarro',
+  dribbble: null,
+};
+
+export const mapping = { afvalenciab, paulinagavilan, jerolan, vic, luisFer, dayra, gerald, migsar };
 
 const speakers = Object.values(mapping);
 
